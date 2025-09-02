@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My ApplicationtHREAD dESCARGA</string>
+    <string name="tv_iniciando_descarga">Iniciando descarga\n</string>
+    <string name="tv_descarga_completada">Descarga Completada\n</string>
+</resources>
