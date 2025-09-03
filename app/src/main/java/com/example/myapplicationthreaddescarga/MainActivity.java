@@ -1,5 +1,6 @@
 package com.example.myapplicationthreaddescarga;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvEstadoDescarga;
     private Handler handler = new Handler(Looper.getMainLooper()); //El handler se encarga de gestionar la comunicacion entre hilos
     private boolean estado = false;
+    private Button btnSiguiente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnIniciarDescarga = findViewById(R.id.btnDescarga); //Asociando las variables a los componentes del layout
         progressBarDescarga = findViewById(R.id.progressBarDescarga);
         tvEstadoDescarga = findViewById(R.id.tvEstadoDescarga);
+        btnSiguiente = findViewById(R.id.btnSiguiente);
 
         btnIniciarDescarga.setOnClickListener(new View.OnClickListener(){
            @Override
@@ -70,6 +73,14 @@ public class MainActivity extends AppCompatActivity {
                };
                thread.start();
            }
+        });
+        btnSiguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navegar a la siguiente actividad
+                Intent intent = new Intent (MainActivity.this, VestirPersonaje.class);
+                startActivity(intent);
+            }
         });
     }
 }

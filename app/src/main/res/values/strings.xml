@@ -2,4 +2,14 @@
     <string name="app_name">My ApplicationtHREAD dESCARGA</string>
     <string name="tv_iniciando_descarga">Iniciando descarga\n</string>
     <string name="tv_descarga_completada">Descarga Completada\n</string>
+    <string name="personaje">Personaje</string>
+    <string name="brazoderecho">Brazoderecho</string>
+    <string name="brazoizquierdo">Brazoizquierdo</string>
+    <string name="piernas">piernas</string>
+    <string name="cabeza">cabeza</string>
+    <string name="Armadura">armadura\n</string>
+    <string name="brazo_derecho">Brazo Derecho</string>
+    <string name="brazo_izquierdo">Brazo Izquierdo</string>
+    <string name="piernas_y_cinturon">Piernas y Cinturon</string>
+    <string name="cuerpo">Cuerpo</string>
 </resources>
